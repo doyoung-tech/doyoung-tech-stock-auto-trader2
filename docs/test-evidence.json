@@ -1,0 +1,72 @@
+{
+  "purpose": "최종 소스와 실행 테스트 증거. 실제 전략 수익성 인증이 아님.",
+  "tests": {
+    "passed": true,
+    "exit_code": 0,
+    "tests_total": 146,
+    "tests_passed": 146,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "source_hashes": {
+      "engine.py": "67a7f322e61836c8be977685bab56a20818086c2f49ab93ee783fb0ede53b065",
+      "models.py": "6756c650689f47c9e41a0b2516f1c58a70215fe6e1c31ec8a9c0fea4aa5984ec",
+      "metrics.py": "a76635532b21a165d3f57fc43dff836dd2e8da8725ffc686b902e271a96035a3",
+      "strategies.py": "74c344e722f1c276453095d3333e5b021e4ac9f437708a16c5efbd042449471a",
+      "indicators.py": "c3e5db8f4b2c95634aeaa67593f87f6f02e33f0f0351dfb2c1dbcf0cbef7b04b",
+      "data.py": "1748f4ef9ff1d55eb7109329bc273bf487a436f456b7a38ab1b92db7cbde12f1",
+      "validation.py": "97f5096e17b2fd406b455221363ea74a5b7295289f125b555420a937ab758c67",
+      "cli.py": "81c3565affb636777e558baabae318c1fecad0a7f70cf8ff7c425cddb5d81946"
+    },
+    "test_hashes": {
+      "tests/test_cli.py": "309347dbfc35ea127ff15dd44310e5a028812189f16b774397e3b5fcc663d28f",
+      "tests/test_data.py": "df8c7860a058a3a626efe5b0dbb376bfc6559b2d82a8bcf448397b962cec9012",
+      "tests/test_engine.py": "233513e3978dbda0204356fc33df488f462c97e5252d78b525cef42c6e54846c",
+      "tests/test_review_engine.py": "1a27104c9272653bc203c50a024777ac9883141f91b6201839a6b6df82bb4dbe",
+      "tests/test_strategies.py": "2e057af8187d21c79341ea6e298b37f3ae46993502919985af395d90d04770ae",
+      "tests/test_validation.py": "4b2473caf2e8390e6c10d0e2a5e1ecaa807912d9d3592cbc8c76ef52308bf38b",
+      "tests/test_web.py": "bcf538adb125421805cb3903bb54031c46e87888fac045bd40310c5912119e40"
+    },
+    "created_at": "2026-10-19T10:01:22.885188+00:00"
+  },
+  "test_groups": {
+    "test_cli": 3,
+    "test_data": 31,
+    "test_engine": 28,
+    "test_review_engine": 5,
+    "test_strategies": 38,
+    "test_validation": 31,
+    "test_web": 10
+  },
+  "actual_report": {
+    "sha256": "54c2ba9376d3bd1750c87227b8b51e22f8959dfdccc03b888bb9651e87b3dafb",
+    "code_version": "9e1c9a404b4659ae82dc4a06c5ccba2320ee84c98d85160b7806a98bc860e5e2",
+    "policy_hash": "69c9887a787c1f3724c31dd2e8b6094c84e96a1d6df20383602c895361673462",
+    "engine_verified": true,
+    "data_evidence_verified": false,
+    "statuses": {
+      "A": "DATA_INSUFFICIENT",
+      "B": "DATA_INSUFFICIENT",
+      "C": "DATA_INSUFFICIENT",
+      "D": "DATA_INSUFFICIENT",
+      "E": "DATA_INSUFFICIENT",
+      "F": "DATA_INSUFFICIENT"
+    },
+    "same_input_replay_identical": true,
+    "independent_audits_passed": true
+  },
+  "us_performance_blocked_for_missing_fx": true,
+  "browser_checks": {
+    "actual_report": true,
+    "viewport_widths": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "javascript_errors": 0,
+    "real_order_writes_rejected": true,
+    "synthetic_vs_real_labels": true,
+    "uncertified_and_unverified_pass_blocked": true
+  }
+}

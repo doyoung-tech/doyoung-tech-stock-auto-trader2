@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "evidence_updated_at": "2026-10-19T09:59:23.976962+00:00",
+  "synthetic": false,
+  "scope": "실제 외부 응답 출처·기간·품질 요약. 원본 시장 데이터는 Git에 재배포하지 않음. 수익성 또는 합격 증명이 아님.",
+  "initial_network_observations": {
+    "outcome": "proxy CONNECT 403 Forbidden",
+    "tls_verification": true,
+    "hosts": [
+      "query1.finance.yahoo.com",
+      "stooq.com",
+      "fred.stlouisfed.org",
+      "fchart.stock.naver.com",
+      "data.krx.co.kr",
+      "data.sec.gov"
+    ],
+    "note": "최초 시도 관측이며 환경 상태 변경 이후의 Yahoo/FRED 성공을 부정하지 않음. Naver/KRX/SEC는 후속 접근 재검증하지 않음."
+  },
+  "subsequent_real_downloads": {
+    "yahoo": {
+      "retrieved_at": "2026-10-19T09:52:19.762111+00:00",
+      "korean_reparsed_records": [
+        {
+          "symbol": "005930.KS",
+          "status": "parsed_with_quarantined_observations",
+          "bars": 4126,
+          "role": "traded_research_asset",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/005930.KS?period1=1262304000&period2=1792368000&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+          "raw_file": "raw/000.json",
+          "sha256": "7e2fc93a4af516e4659a2a873596a4b4f3e7fc8a397ed0f10a437233df11f2dd",
+          "unknown_missing_sessions": [
+            "2024-10-14T06:30:00+00:00",
+            "2025-09-19T06:30:00+00:00"
+          ],
+          "quarantined_observations": [
+            {
+              "timestamp": "2024-10-14T06:30:00+00:00",
+              "reason": "provider_inconsistent_ohlcv",
+              "ohlcv": [
+                59500.0,
+                61200.0,
+                59400.0,
+                59300.0,
+                20886249
+              ]
+            },
+            {
+              "timestamp": "2025-09-19T06:30:00+00:00",
+              "reason": "provider_all_null",
+              "ohlcv": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            }
+          ],
+          "actual_start": "2010-01-04T06:30:00+00:00",
+          "actual_end": "2026-10-16T06:30:00+00:00"
+        },
+        {
+          "symbol": "000660.KS",
+          "status": "parsed_with_quarantined_observations",
+          "bars": 4124,
+          "role": "traded_research_asset",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/000660.KS?period1=1262304000&period2=1792368000&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+          "raw_file": "raw/001.json",
+          "sha256": "b91331cb45b7c4730019d3fb711b02a39a3fd85efedc7dd4b19784514d4eea72",
+          "unknown_missing_sessions": [
+            "2023-02-02T06:30:00+00:00",
+            "2023-02-09T06:30:00+00:00",
+            "2024-10-14T06:30:00+00:00",
+            "2025-09-19T06:30:00+00:00"
+          ],
+          "quarantined_observations": [
+            {
+              "timestamp": "2023-02-02T06:30:00+00:00",
+              "reason": "provider_inconsistent_ohlcv",
+              "ohlcv": [
+                94900.0,
+                94900.0,
+                92700.0,
+                91400.0,
+                8254
+              ]
+            },
+            {
+              "timestamp": "2023-02-09T06:30:00+00:00",
+              "reason": "provider_inconsistent_ohlcv",
+              "ohlcv": [
+                94800.0,
+                94800.0,
+                92600.0,
+                94900.0,
+                12117
+              ]
+            },
+            {
+              "timestamp": "2024-10-14T06:30:00+00:00",
+              "reason": "provider_inconsistent_ohlcv",
+              "ohlcv": [
+                186900.0,
+                192300.0,
+                186900.0,
+                186000.0,
+                3309274
+              ]
+            },
+            {
+              "timestamp": "2025-09-19T06:30:00+00:00",
+              "reason": "provider_all_null",
+              "ohlcv": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            }
+          ],
+          "actual_start": "2010-01-04T06:30:00+00:00",
+          "actual_end": "2026-10-16T06:30:00+00:00"
+        },
+        {
+          "symbol": "^KS11",
+          "status": "parsed_with_quarantined_observations",
+          "bars": 4126,
+          "role": "benchmark",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKS11?period1=1262304000&period2=1792368000&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+          "raw_file": "raw/002.json",
+          "sha256": "de665fceaa904e30319cd547f866bcdf669699d6d88dd18b0c73bda06c26ddb4",
+          "unknown_missing_sessions": [
+            "2011-10-04T06:30:00+00:00",
+            "2015-08-14T06:30:00+00:00"
+          ],
+          "quarantined_observations": [
+            {
+              "timestamp": "2011-10-04T06:30:00+00:00",
+              "reason": "provider_all_null",
+              "ohlcv": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            {
+              "timestamp": "2015-08-14T06:30:00+00:00",
+              "reason": "provider_all_null",
+              "ohlcv": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            }
+          ],
+          "actual_start": "2010-01-04T06:30:00+00:00",
+          "actual_end": "2026-10-16T06:30:00+00:00"
+        },
+        {
+          "symbol": "^KQ11",
+          "status": "parsed_with_quarantined_observations",
+          "bars": 4127,
+          "role": "benchmark_alternative_raw_only",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EKQ11?period1=1262304000&period2=1792368000&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+          "raw_file": "raw/003.json",
+          "sha256": "7096fb7167a8a18d1765cc76185d77f0025bb476b1c2d05999645b9af997c5d2",
+          "unknown_missing_sessions": [
+            "2015-08-14T06:30:00+00:00"
+          ],
+          "quarantined_observations": [
+            {
+              "timestamp": "2015-08-14T06:30:00+00:00",
+              "reason": "provider_all_null",
+              "ohlcv": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            }
+          ],
+          "actual_start": "2010-01-04T06:30:00+00:00",
+          "actual_end": "2026-10-16T06:30:00+00:00"
+        }
+      ],
+      "korean_actual_tradable_bars": 8250,
+      "korean_benchmark_bars": 4126,
+      "korean_unknown_unusable_sessions": 8,
+      "us": [
+        {
+          "symbol": "SPY",
+          "status": "downloaded",
+          "bars": 4223,
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1262304000&period2=1792368000&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+          "raw_file": "raw/004.json",
+          "sha256": "5dcd2c5690a60ea18ecf99a4c08592028316a756fa6ae469cb8f8332fdd3acce"
+        },
+        {
+          "symbol": "^GSPC",
+          "status": "downloaded",
+          "bars": 4223,
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=1262304000&period2=1792368000&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+          "raw_file": "raw/005.json",
+          "sha256": "dda8e11ca23fb98bc76217a580acf18ed42e07c51d7b219c521e87eb6be6d069"
+        }
+      ],
+      "us_fx_available_at_verified": false,
+      "us_performance_calculated": false
+    },
+    "fred": {
+      "host": "fred.stlouisfed.org",
+      "series": "DEXKOUS",
+      "observation_rows": 4375,
+      "positive_numeric_observations": 4196,
+      "missing_observations": 179,
+      "actual_start": "2010-01-04",
+      "actual_end": "2026-10-09",
+      "release_timestamps_verified": false,
+      "usable_for_execution_fx": false
+    },
+    "stooq": {
+      "response": "HTML browser verification challenge, not OHLCV CSV",
+      "actual_bars": 0,
+      "bypassed_challenge": false,
+      "note": "초기 영수증의 fx_complete=true는 빈 배열 all([]) 계산 버그이며 코드에서 수정. 데이터 없음이 FX 완전성을 뜻하지 않음."
+    }
+  },
+  "current_trust_limitations": [
+    "현재 두 한국 생존 종목만 포함하여 생존자 편향을 통제하지 못함",
+    "기업행위·당시 종목구성·공시/전망/업종 이력을 검증하지 못함",
+    "원본 오류 세션을 격리했으며 가격 수정·보간하지 않음",
+    "실제 원화 전략 합격 또는 수익 보장 아님",
+    "동일 자료 전체구간은 엔진 통합 점검에도 사용했습니다. 자동 시간분리는 구현했지만 엄격한 블라인드 최종 독립 검증은 아니며 새 미사용 기간이 필요합니다."
+  ],
+  "artifacts": {
+    "kr_receipt": {
+      "workspace_path": "data/real-kr/collection.json",
+      "sha256": "6005baf90b6bc283edb6e8a1253a8270c0a9578f8f7934721a7a7bc770430e8d",
+      "bytes": 5617
+    },
+    "kr_manifest": {
+      "workspace_path": "data/real-kr/manifest.json",
+      "sha256": "2f6c199f17641466589873a029e04975884962059cd1b3467666ef22436b96bf",
+      "bytes": 2682
+    },
+    "yahoo_initial_receipt": {
+      "workspace_path": "data/real-yahoo/collection.json",
+      "sha256": "ad04d1b6b10ded94e863249abe114d49246c783182444b994cfdff173f137ed1",
+      "bytes": 2318
+    },
+    "stooq_receipt": {
+      "workspace_path": "data/real-stooq/collection.json",
+      "sha256": "93a00ef1d8d23553d84abefa229fe0abbeff575feb93c52a13aa65e04366ca6d",
+      "bytes": 485
+    },
+    "stooq_response": {
+      "workspace_path": "data/real-stooq/raw/000.csv",
+      "sha256": "acac13c314e89fced245bcd5de60bb7b33f55ce7ec4436a878820c68e369cfea",
+      "bytes": 796
+    },
+    "fred_observed_fx": {
+      "workspace_path": "data/fred-observed-fx.csv",
+      "sha256": "e5b56952dd43dad5f89e381a65ea60a07a9b7e07930ec2594d075dfed3f3eace",
+      "bytes": 81897
+    }
+  }
+}

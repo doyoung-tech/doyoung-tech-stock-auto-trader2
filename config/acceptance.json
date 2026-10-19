@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "policy_name": "보수적 연구 기준 v1 (성과 확인 전 고정)",
+  "seed": 1729,
+  "family_wise_alpha": 0.05,
+  "bootstrap_samples": 4999,
+  "development_fraction": 0.45,
+  "walk_forward_fraction": 0.35,
+  "walk_forward_folds": 3,
+  "min_development_bars": 252,
+  "min_fold_bars": 126,
+  "min_holdout_bars": 252,
+  "minimum_trades_walk_forward": 60,
+  "minimum_trades_holdout": 30,
+  "minimum_regime_trades": 10,
+  "required_regimes": ["bull", "bear", "sideways"],
+  "maximum_drawdown": 0.15,
+  "minimum_profitable_fold_fraction": 0.6666666666666666,
+  "cost_multiplier": 2.0,
+  "minimum_neighbor_profitable_fraction": 0.5,
+  "minimum_neighbor_return": -0.02,
+  "require_benchmark_outperformance": true,
+  "long_horizon": {
+    "minimum_trades_walk_forward": 20,
+    "minimum_trades_holdout": 20,
+    "minimum_regime_trades": 5,
+    "maximum_drawdown": 0.25
+  }
+}
